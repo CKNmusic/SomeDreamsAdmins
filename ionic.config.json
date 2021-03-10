@@ -1,0 +1,7 @@
+{
+  "name": "SomeDreams.Ionic",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

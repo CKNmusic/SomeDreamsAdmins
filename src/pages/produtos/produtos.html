@@ -1,0 +1,14 @@
+
+<ion-content padding class="masters">
+  <ion-refresher #refresherRef slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content pullingIcon="arrow-down" pullingText="Puxe para atualizar" refreshingText="Aguarda aí que estamos atualizando" refreshingSpinner="crescent" >
+    </ion-refresher-content>
+</ion-refresher>
+   
+
+<ion-row justify-content-center text-center>
+  <produtos-c [productName] = "resposta"></produtos-c> 
+</ion-row>
+
+</ion-content>
+

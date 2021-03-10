@@ -1,0 +1,34 @@
+<!-- Generated template for the ProdutosCComponent component -->
+
+
+<div *ngFor="let produto of productName; let i = index">
+  <hr>
+  <ion-col size-sm="6" size="6">
+  <ion-card type ="button" button = true class= "box">
+    <ion-card-header >
+      
+      <ion-card-title>{{produto.nome}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content >
+      <img class="center" style="border-radius: 2%;height: 90%;width: 90%;" src={{produto.imagem}}>
+      <br>
+        <div hidden="false" id="{{ 'Price' + i }}" >
+          <ion-card  > Preço inicial: <h2>R${{produto.preco}}</h2></ion-card>
+        </div>
+        <hr>
+      <div id="DD" (click)="toggleSection(i)">
+          <ion-icon id="{{ 'DD2' + i }}" color="arrowDD" name="arrow-round-down"></ion-icon>
+          <ion-icon hidden="false" id="{{ 'DD1' + i }}" color="arrowDD" name="arrow-round-up"></ion-icon>
+        </div>
+      <br>
+      {{produto.desc}}
+    </ion-card-content>
+    
+
+  </ion-card>
+  </ion-col>
+  
+</div>
+
+
+

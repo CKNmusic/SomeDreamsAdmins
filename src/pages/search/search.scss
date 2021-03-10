@@ -1,0 +1,39 @@
+
+input[type=text]{
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+     border-radius: 20px;
+     border: 1px solid #dddddd;
+     color: #b6b6b6;
+     width: 250px;
+     height: 40px;
+     padding-left: 10px;
+    }
+    
+input[type=text]:focus {
+     outline: none;
+     border: 1px solid #a7a7a7;
+     color: #979797;
+     animation-name: expandInput;
+     animation-duration: 1s;
+     animation-fill-mode: forwards;
+}
+
+
+input[type=text]:not(:focus), button[type=text]:not(:focus) {
+    animation-name: expandInputOff;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes expandInput {
+    0%   { width: 250px;}
+    100% {width: 350px;}
+}
+
+@keyframes expandInputOff {
+    0% {width: 350px; }
+    100%   { width: 250px; }
+}
+

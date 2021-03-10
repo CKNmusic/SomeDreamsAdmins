@@ -1,0 +1,33 @@
+
+<ion-header>
+
+  <ion-navbar>
+
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+
+  <ion-grid text-center class="vertical-align-content">
+    <ion-row style="height: 10%;">
+      <ion-col size="12">
+        <ion-input type="text" (click)="onClickSearch()" id="input" class="Input-text" placeholder="Pesquisar..."></ion-input>
+        <button (click)="onSubmitSearch()" type="button" id="searchButton">
+          Pesquisar
+          </button>
+        </ion-col>
+    </ion-row>
+    <br>
+
+    <ion-row  style="height: 100%;">
+      <ion-col size="12" id="errorSearch" style="display: none;">
+        <h5>Não encontramos esse serviço</h5>
+        <img style="height: 70%;width: 70%;opacity: 0.8;" src="../../assets/imgs/Erros/searchSadImg.png">
+
+        </ion-col>
+    </ion-row>
+    
+  </ion-grid>
+  </ion-content>

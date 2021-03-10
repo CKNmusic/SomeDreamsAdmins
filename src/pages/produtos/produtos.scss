@@ -1,0 +1,34 @@
+.masters{
+    background-color:#679fff,;
+}
+
+ion-refresher ion-refresher-content {
+    --color:#FFF !important;
+    
+    .refresher-pulling-text, .refresher-refreshing-text, .refresher-refreshing-icon, .refresher-pulling-icon {
+      color: #fff !important;
+    }
+  }
+.center {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+
+  .vertical-align-content > *
+{
+     display: flex!important;
+     align-content: center!important;
+     align-items: center!important;
+}
+
+ion-grid{
+    height: 100%;
+}
+ion-row{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
